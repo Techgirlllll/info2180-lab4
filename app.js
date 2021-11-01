@@ -13,7 +13,8 @@ window.onload = function() {
     .then(data => {
         result.innerHTML = "";
         result.innerHTML = data; 
-    });
+    })
+    .catch(error => console.log("There was a problem with the request"));
   });
 };
 
